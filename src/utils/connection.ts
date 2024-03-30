@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: "bitespeed-task",
+  host: process.env.HOST_URL,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DB_NAME,
   multipleStatements: true
 });
 
