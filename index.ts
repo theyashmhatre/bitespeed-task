@@ -8,7 +8,7 @@ const PORT: number = 8000;
 app.use(express.json());
 
 
-app.use("/", require("./routes/identity"))
+app.use("/", require("./src/routes/identify"))
 
 app.use("*", (req: Request, res: Response) => {
   res.status(404).json({ msg: "Not Found" });
