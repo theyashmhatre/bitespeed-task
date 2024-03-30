@@ -1,4 +1,4 @@
-const connection = require("../db/connection");
+const connection = require("./connection");
 import { Contact } from "../interfaces/Contact";
 
 

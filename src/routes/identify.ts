@@ -1,4 +1,4 @@
-const connection = require("../db/connection");
+const connection = require("../utils/connection");
 import express, { Express, Request, Response } from "express";
 const router = express.Router();
 import { Contact } from "../interfaces/Contact";
